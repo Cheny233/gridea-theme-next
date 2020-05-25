@@ -6,7 +6,9 @@
 <meta name="theme-color" content="<%= site.customConfig.bgSiteMetaColor %>">
 <title><%= siteTitle %></title>
 <link rel="shortcut icon" href="<%= cdn %>/favicon.ico?v=<%= site.utils.now %>">
+<link rel="stylesheet" href="<%= cdn %>/styles/main.css">
 <link rel="stylesheet" href="<%= cdn %>/media/css/<%= scheme?scheme:'pisces' %>.css">
+
 <link rel="stylesheet" href="<%= cdn %>/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -14,11 +16,6 @@
 
 <link href="<%= cdn %>/media/hljs/styles/<%= site.customConfig.hljs?site.customConfig.hljs:'github' %>.css"
   rel="stylesheet">
-<% if (site.customConfig.loadAnimationStyle && site.customConfig.loadAnimationStyle !== '') { %>
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-<link href="<%= site.customConfig.loadAnimationStyle %>" rel="stylesheet" />
-<% } %>
-<link rel="stylesheet" href="<%= cdn %>/styles/main.css">
 
 <script src="<%= cdn %>/media/hljs/highlight.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
@@ -30,11 +27,11 @@
 <script>
   window.MathJax = {
     tex: {
-      inlineMath: [['$', '$'], ["\\(", "\\)"]],
-      displayMath: [['$$', '$$'], ["\\[", "\\]"]]
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
     },
     options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'a', 'annotation', 'annotation-xml'],
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre','code', 'a', 'annotation', 'annotation-xml'],
       ignoreHtmlClass: 'tex2jax_ignore|crayon-.*', // 'crayon-' 开头的类，属于Wordpress代码高亮库，这部分不需要处理，否则会导致显示不正确,这部分是正则式，多条之间用'|'分割
       processHtmlClass: 'tex2jax_process'
     },
@@ -45,7 +42,7 @@
   };
 </script>
 <script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <% } else { %>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
   integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
@@ -76,4 +73,3 @@
   })();
 </script>
 <% } %>
-<% locals['userinfo'] = 'admin'; %>

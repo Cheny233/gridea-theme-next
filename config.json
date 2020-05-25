@@ -89,23 +89,6 @@
       "note": "修改字体需要将下载好的ttf文件复制到~/Gridea/themes/next/assets/media/fonts目录下，把文件名写在上面，重新生成即可，若无效联系微信:wx806649821(备注Next)"
     },
     {
-      "name": "language",
-      "label": "语言",
-      "group": "布局",
-      "value": "",
-      "type": "select",
-      "options": [
-        {
-          "label": "中文（默认）",
-          "value": ""
-        },
-        {
-          "label": "英文",
-          "value": "en"
-        }
-      ]
-    },
-    {
       "label": "相关文档",
       "group": "颜色",
       "note": "https://yeming.site/post/1JA_OJlig/#颜色"
@@ -333,14 +316,6 @@
       "value": true,
       "type": "switch",
       "note": "开启会产生头像旋转彩蛋"
-    },
-    {
-      "name": "enableSearch",
-      "label": "站内搜索",
-      "group": "特性",
-      "value": true,
-      "type": "switch",
-      "note": "站内搜索功能"
     },
     {
       "name": "sideIsRight",
@@ -674,14 +649,6 @@
       "note": "博主介绍美化,默认关闭"
     },
     {
-      "name": "loadAnimationStyle",
-      "label": "加载动画样式",
-      "group": "魔改",
-      "value": "",
-      "type": "input",
-      "note": "使用外链或本地地址加载样式，详情查看文档，默认不开启"
-    },
-    {
       "name": "opacity",
       "label": "可视区透明度",
       "group": "魔改",
@@ -756,7 +723,7 @@
         },
         {
           "label": "凉风青叶",
-          "value": "aoba"
+          "value": "Aoba"
         },
         {
           "label": "小黑",
