@@ -1,4 +1,4 @@
-##自行魔改版-将gridea-theme-next-new下载后改为gridea-theme-next-master
+## 自行魔改版-将文件下载解压后改为gridea-theme-next-master
 
 <h1 align="center">
   Gridea Theme NexT
