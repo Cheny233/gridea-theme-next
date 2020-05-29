@@ -338,7 +338,7 @@
       "name": "enableSearch",
       "label": "站内搜索",
       "group": "特性",
-      "value": true,
+      "value": false,
       "type": "switch",
       "note": "站内搜索功能"
     },
