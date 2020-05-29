@@ -1,3 +1,5 @@
+##自行魔改版-将gridea-theme-next-new下载后改为gridea-theme-next-master
+
 <h1 align="center">
   Gridea Theme NexT
 </h1>
