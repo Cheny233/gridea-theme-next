@@ -3,7 +3,7 @@ let map = new Map();
 map.set('/','home'); 
 map.set('/archives', 'archive'); 
 map.set('/tags','tags');
-map.set('/post/about','user');
+map.set('/post/about','id-card-of');
 map.set('/post/skin-update','info-circle'); %>
 <div class="<%= scheme !==''?scheme:'pisces' %>">
   <header class="header <%= scheme === 'mist' || scheme === 'muse'?'bg-color':''%> ">
@@ -48,7 +48,7 @@ map.set('/post/skin-update','info-circle'); %>
                     <% if (site.customConfig.friendsIcon) { %>
                       <%= site.customConfig.friendsIcon %><%= site.customConfig.friendsTitle %>
                     <% } else { %>
-                      <i class="fa fa-address-book"></i><%= site.customConfig.friendsTitle %>
+                      <i class="fa fa-link"></i><%= site.customConfig.friendsTitle %>
                     <% } %>
                   </a>
                 </li>
@@ -84,7 +84,7 @@ map.set('/post/skin-update','info-circle'); %>
                   <% if (site.customConfig.friendsIcon) { %>
                     <%= site.customConfig.friendsIcon %><%= site.customConfig.friendsTitle %>
                   <% } else { %>
-                    <i class="fa fa-address-book"></i> <%= site.customConfig.friendsTitle %>
+                    <i class="fa fa-link"></i> <%= site.customConfig.friendsTitle %>
                   <% } %>
                 </a>
               </li>
